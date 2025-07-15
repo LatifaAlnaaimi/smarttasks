@@ -186,13 +186,14 @@ transition: all 0.2s ease;
   right: 1rem;
   display: flex;
   gap: 0.5rem;
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
   transition: all 0.2s ease;
 }
 
 .task-card:hover .task-actions {
   opacity: 1;
+  visibility: visible;
 }
 .edit-btn, .delete-btn {
   width: 36px;
@@ -373,14 +374,14 @@ dialog::backdrop {
   gap: 0.5rem;
   justify-content: flex-end;
   margin-top: auto;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   transition: opacity 0.2s ease;
 }
 
 .task-card:hover .task-actions {
   opacity: 1;
-  visibility: visible;
+
 }
 
 .edit-btn, .delete-btn {
