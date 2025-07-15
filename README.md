@@ -1,114 +1,84 @@
-# SmartTasks 📝  
-A clean and intelligent web-based task management app, built using pure HTML, CSS, and JavaScript. Easily add, delete, and complete tasks with smart filtering, search, and a sleek UI. Supports dark mode and saves tasks in your browser.
+# SmartTasks – Task Manager App 🧠📝  
+(English below ⬇️)
+
+## 📌 نبذة عن المشروع:
+SmartTasks هو تطبيق لإدارة المهام اليومية بواجهة أنيقة ومتجاوبة، مبني باستخدام HTML وCSS وJavaScript بدون أي مكتبات خارجية.  
+يسمح للمستخدم بإضافة المهام وتحديد أولويتها، والتبديل بين ثيمات متعددة، مع حفظ البيانات محليًا في المتصفح.
 
 ---
 
-## ✨ Features
-
-- ✅ Add new tasks
-- 🗑️ Delete and edit tasks
-- 📌 Filter (All - Completed - Incomplete)
-- 🔍 Instant search
-- 🌙 Light / Dark mode toggle
-- 💾 Saves to `localStorage`
-- 🔄 Drag & drop to reorder tasks
-- 📊 Real-time task counter
+## ✨ الميزات:
+- إضافة وتعديل وحذف المهام
+- تمييز المهام المهمة (وتصعد للأعلى)
+- تحديد حالة المهمة (مكتملة / غير مكتملة)
+- فلترة المهام (الكل، المكتملة، الغير مكتملة)
+- اختيار الثيم (فاتح، داكن، ناعم، دافئ)
+- تخزين المهام والثيم في LocalStorage
+- تصميم متجاوب يناسب جميع الأجهزة
 
 ---
 
-## 🧠 Technologies Used
-
-- `HTML5` – Markup structure
-- `CSS3` – Responsive and modern styling
-- `Vanilla JavaScript` – Interactive logic without libraries
-
----
-
-## 🛠️ Getting Started
-
-1. Clone or download the project
-2. Open `index.html` in your browser
-3. No installation required!
+## 🛠️ التقنيات المستخدمة:
+- HTML5
+- CSS3 (with custom properties / variables)
+- Vanilla JavaScript
+- LocalStorage
+- Responsive Design (Media Queries)
 
 ---
 
-## 🖼️ Screenshots
-
-> *(You can add screenshots or GIFs after designing the UI)*
-
----
-
-## 💡 Future Improvements
-
-- User login & task sync across devices
-- Task categorization (Work, Study, etc.)
-- Notifications & reminders
-- Firebase or cloud storage integration
+## 📱 تصميم متجاوب:
+متوافق تمامًا مع شاشات الهواتف والتابلت، مع عناصر تفاعلية بحجم مناسب للمس.
 
 ---
 
-## 👩‍💻 Developer Note
+## 🚀 تجربة المشروع:
+[🔗 عرض مباشر للموقع](https://latifaalnaaimi.github.io/smarttasks)
 
-This project was created to showcase real-world application of JavaScript fundamentals and dynamic UI building.
-
-**Built with ❤️ by [Latifa]**
+[📂 كود المشروع على GitHub](https://github.com/latifaalnaaimi/smarttasks)
 
 ---
 
 ---
 
-# Smart Tasks 📝  
-تطبيق ويب ذكي وأنيق لإدارة المهام اليومية، مبني باستخدام HTML و CSS و JavaScript بدون أي مكتبات خارجية. يمكنك من إضافة المهام، تعديلها، حذفها، وإنجازها بسهولة. يدعم الوضع الليلي، البحث، والحفظ المحلي في المتصفح.
+---
+
+# SmartTasks – Task Manager App 🧠📝  
+
+## 📌 About the Project:
+SmartTasks is a fully responsive and theme-customizable task management web app built using pure HTML, CSS, and JavaScript — no libraries or frameworks.  
+Users can add, filter, and prioritize their tasks while choosing from multiple UI themes. The data is saved locally in the browser.
 
 ---
 
-## ✨ المميزات
-
-- ✅ إضافة مهام جديدة
-- 🗑️ حذف وتعديل المهام
-- 📌 فلترة (الكل - المكتملة - غير المكتملة)
-- 🔍 بحث مباشر
-- 🌙 وضع ليلي / نهاري
-- 💾 تخزين المهام في `localStorage`
-- 🔄 سحب وإفلات لإعادة ترتيب المهام
-- 📊 عداد مباشر للمهمات المنجزة
+## ✨ Features:
+- Add, edit, delete tasks
+- Mark tasks as complete/incomplete
+- Highlight high-priority tasks (appear at the top)
+- Filter tasks (All / Complete / Incomplete)
+- Switch between 4 themes (Light / Dark / Warm / Soft)
+- Data persistence using LocalStorage
+- Fully responsive design for all screen sizes
 
 ---
 
-## 🧠 التقنيات المستخدمة
-
-- `HTML5` – الهيكل العام
-- `CSS3` – تصميم عصري ومتجاوب
-- `JavaScript Vanilla` – التفاعل الديناميكي بدون مكتبات
-
----
-
-## 🛠️ طريقة التشغيل
-
-1. نزّل الملفات أو اعمل `clone` من GitHub
-2. افتح ملف `index.html` في المتصفح
-3. لا يتطلب أي إعداد إضافي
+## 🛠️ Technologies:
+- HTML5
+- CSS3 (with CSS variables)
+- JavaScript (DOM manipulation)
+- LocalStorage
+- Responsive layout using Flex/Grid & Media Queries
 
 ---
 
-## 🖼️ صور من المشروع
-
-> *(بإمكانك إضافة لقطات شاشة لاحقًا بعد الانتهاء من التصميم)*
-
----
-
-## 💡 أفكار مستقبلية للتطوير
-
-- تسجيل دخول وربط المهام بالحساب
-- تصنيفات للمهام (دراسة، عمل، ...الخ)
-- تذكيرات وإشعارات
-- حفظ سحابي (Firebase أو غيره)
+## 📱 Responsive Design:
+Optimized for mobile, tablet, and desktop with clean layout and interactive touch controls.
 
 ---
 
-## 👩‍💻 من المطورة
+## 🚀 Live Preview:
+[🔗 View Project](https://latifaalnaaimi.github.io/smarttasks)
 
-تم بناء هذا المشروع لتطبيق مهارات JavaScript الأساسية والمتقدمة من خلال واجهة حقيقية وتفاعلية.
+[📂 Source Code](https://github.com/latifaalnaaimi/smarttasks)
 
-**من تصميم وتطوير: [Latifa]**
 
