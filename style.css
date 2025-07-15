@@ -186,14 +186,13 @@ transition: all 0.2s ease;
   right: 1rem;
   display: flex;
   gap: 0.5rem;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   transition: all 0.2s ease;
 }
 
 .task-card:hover .task-actions {
   opacity: 1;
-  visibility: visible;
 }
 .edit-btn, .delete-btn {
   width: 36px;
