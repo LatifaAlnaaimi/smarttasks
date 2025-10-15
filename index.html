@@ -1,76 +1,69 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SmartTasksApp</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="app.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
 </head>
 <body>
-  <header class="head">
-    <div class="header">
-      <h1>Smart Tasks</h1>
-      <div class="theme-dropdown">
-        <label for="themeSelect">Theme:</label>
-        <select id="themeSelect">
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-          <option value="warm">Warm</option>
-          <option value="soft">Soft</option>
-        </select>
-      </div>
-    </div>
-  </header>
-
-  <main class="container">
-    <nav class="menu-bar">
-    <ul class="filter-list" id="filterList">
-        <li data-filter="all" class="active">All</li>
-        <li data-filter="complete">Complete</li>
-        <li data-filter="incomplete">Incomplete</li>
-    </ul>
-
-      <a href="#" class="add-task-btn" onclick="openTaskDialog()">+ Add New</a>
-    </nav>
-
-    <dialog id="taskDialog">
-      <div class="dialog-content">
-        <div class="dialog-header">
-          <h2 class="dialog-title" id="dialogTitle">Add New Task</h2>
-          <button class="close-btn" onclick="closeTaskDialog()"><i class="fa-solid fa-xmark"></i></button>
+  <header>
+        <div class="logo">
+            <h3>smart tasks</h3>
         </div>
-        <form id="taskForm">
-          <div class="form-group">
-            <label for="taskTitle" class="form-label">Task</label>
-            <input type="text" id="taskTitle" class="form-input" placeholder="Enter task title..." required />
-          </div>
-          <div class="form-group">
-          <label for="taskPriority" class="form-label">Priority</label>
-          <select id="taskPriority" class="form-input">
-            <option value="high">High</option>
-            <option value="medium" selected>Medium</option>
-            <option value="low">Low</option>
-          </select>
-          </div>
+        <div class="theme">
+            <div class="theme-toggle" id="themeToggle">
+  <i class="sun-icon fa-solid fa-sun"></i>
+  <i class="moon-icon fa-solid fa-moon"></i>
+</div>
 
-
-          <div class="dialog-actions">
-            <button type="button" class="cancel-btn" onclick="closeTaskDialog()">Cancel</button>
-            <button type="submit" class="save-btn">Save Task</button>
-          </div>
-        </form>
-      </div>
-    </dialog>
-
-    <section class="cards">
-      <div id="tasksContainer" class="tasks-grid"></div>
-    </section>
-
-    <section class="task-stats">
-      <p>Complete <span id="completedCount">0</span> of <span id="totalCount">0</span></p>
-    </section>
-  </main>
+        </div>
+    </header>
+    <!--==================================================================================-->
+    <nav class="navbar">
+        <ul class="tabs">
+            <li class="tab active">all</li>
+            <li class="tab">complete</li>
+            <li class="tab">incomplete</li>
+        </ul>
+    </nav>
+    <!--==================================================================================-->
+    <div class="control">
+        <p>today</p>
+        <a href="#" class="btn"id="openFormBtn"><span class="plus-icon">+</span>
+    <span class="button-text">Add New</span><i class="fa fa-plus" aria-hidden="true"></i></a>
+    </div>
+    <!--==================================================================================-->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-form">
+        <h2>add new task  </h2>
+            <form id="userForm" class="userForm">
+                <label>task</label>
+                <input aria-label="task" type="text" id="task" required placeholder="enter task title...">
+                
+                <label>Priority</label>
+                <select id="serviceType" title="Priority" required class="Priority">
+                    <option value="high">high</option>
+                    <option value="medium">medium</option>
+                    <option value="low">low</option>
+                </select>
+                <div class="buttons">
+                    <button type="submit" class="save-btn" id="saveBtn">save task</button>
+                <button type="button" id="closeFormBtn" class="cancel-btn">cancel</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <!--==================================================================================-->
+    <div id="taskList" class="contaner">
+      
+    </div>
+    <!--==================================================================================-->
+    <div class="complete">
+        <p id="taskCounter">complete 4 of 8</p>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
